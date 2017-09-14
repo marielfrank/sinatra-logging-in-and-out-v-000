@@ -7,7 +7,7 @@ describe "Helpers" do
       session = {
         :user_id => 1
       }
-      # binding.pry
+      
       expect(Helpers.current_user(session)).to be_an_instance_of(User)
     end
 
@@ -20,6 +20,7 @@ describe "Helpers" do
       session = {
         :user_id => 1
       }
+      binding.pry
       expect(Helpers.is_logged_in?(session)).to eq(true)
     end
 

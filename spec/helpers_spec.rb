@@ -7,6 +7,7 @@ describe "Helpers" do
       session = {
         :user_id => 1
       }
+      binding.pry
       expect(Helpers.current_user(session)).to be_an_instance_of(User)
     end
 

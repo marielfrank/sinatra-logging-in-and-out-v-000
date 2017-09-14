@@ -24,7 +24,6 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     Helpers.is_logged_in?(session) ? erb :account : erb :error
-    end
   end
 
   get '/logout' do

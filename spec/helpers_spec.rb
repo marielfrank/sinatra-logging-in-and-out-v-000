@@ -20,7 +20,7 @@ describe "Helpers" do
       session = {
         :user_id => 1
       }
-      binding.pry
+      # binding.pry
       expect(Helpers.is_logged_in?(session)).to eq(true)
     end
 

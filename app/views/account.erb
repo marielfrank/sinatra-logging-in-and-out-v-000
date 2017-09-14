@@ -10,7 +10,7 @@
 
     <% @helper = Helpers.new
     if @helper.is_logged_in?(session) %>
-      <p><%= @helper.current_user(session).username %></p>
+      <h1>Welcome <%= @helper.current_user(session).username %></h1>
       <p><%= @helper.current_user(session).balance %></p>
     <% else %>
       <p><a href="/">Homepage</a></p>
